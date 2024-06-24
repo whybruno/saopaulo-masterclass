@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+<body>
+  <header class="w-full">
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b-2 border-[#EF5C65] bg-[#143250]">
+      <div class="h-16 xl:h-20 flex justify-between items-center mx-auto px-5 md:px-10 xl:px-20">
+        <a href="#"><img class="h-8 xl:h-10" src="./assets/images/gph-logo-white.png" alt=""></a>
+        <div id="menu" class="w-8 h-8 bg-[url('./assets/images/menu.png')] hover:bg-[url('./assets/images/menu-hover.png')] bg-cover bg-center bg-no-repeat hover:cursor-pointer lg:hidden"></div>
+        <ul class="lg:flex md:space-x-12 lg:space-x-10 hidden">
+          <li class="font-medium text-lg lg:text-base xl:text-lg text-white hover:text-[#EF5C65]">
+            <a class="" href="#about">About</a>
+          </li>
+          <li class="font-medium text-lg lg:text-base xl:text-lg text-white hover:text-[#EF5C65]">
+            <a class="" href="#schedule">Schedule</a>
+          </li>
+          <li class="font-medium text-lg lg:text-base xl:text-lg text-white hover:text-[#EF5C65]"> 
+            <a class="" href="#speakers">Speakers</a>
+          </li>
+          <li class="font-medium text-lg lg:text-base xl:text-lg text-white hover:text-[#EF5C65]"> 
+            <a class="" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="font-medium text-lg lg:text-base xl:text-lg text-white hover:text-[#EF5C65]"> 
+            <a class="" href="#partners">Partners</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="h-screen px-5 sm:px-10 md:px-10 py-24 sm:py-28 md:py-32 bg-[#143250] hidden lg:hidden">
+      <ul class="space-y-5">
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]">
+          <a class="" href="#">About</a>
+        </li>
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]">
+          <a class="" href="#">Schedule</a>
+        </li>
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]"> 
+          <a class="" href="#">Speakers</a>
+        </li>
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]"> 
+            <a class="" href="#">Sponsors</a>
+        </li>
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]"> 
+            <a class="" href="#">Partners</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="h-96 xl:h-screen flex items-center justify-center p-5 md:p-10 xl:p-20 py-72 sm:py-60 lg:py-80 bg-[url('./assets/images/bg-hero-0.png')] bg-cover bg-bottom bg-no-repeat bg-[#143250]">
+        <div id="hero" class="w-full flex flex-col mt-12 lg:mt-20 text-white">
+            <div class="flex flex-col sm:flex-row justify-between">
+              <div class="mb-5 sm:mb-0">
+                <p class="sm:mb-2.5 font-normal text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl ">October 18–21, 2024</p>
+                <p class="font-normal text-md sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sao Paulo, Brazil</p>
+              </div>
+              <div class="flex justify-between items-center w-60 sm:w-64 lg:w-80 h-20 px-5 bg-[#143250]/50">
+                <div class="1/4">
+                  <p id="days" class="font-normal 2xl:text-2xl"></p>
+                  <p class="font-normal text-xs sm:text-sm lg:text-md">Days</p>
+                </div>
+                <div class="1/4">
+                  <p id="hours" class="font-normal 2xl:text-2xl"></p>
+                  <p class="font-normal text-xs sm:text-sm lg:text-md">Hours</p>
+                </div>
+                <div class="1/4">
+                  <p id="minutes" class="font-normal 2xl:text-2xl"></p>
+                  <p class="font-normal text-xs sm:text-sm lg:text-md">Minutes</p>
+                </div>
+                <div class="1/4">
+                  <p id="seconds" class="font-normal 2xl:text-2xl"></p>
+                  <p class="font-normal text-xs sm:text-sm lg:text-md">Seconds</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-6xl font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl my-10 lg:my-20 2xl:my-40">
+                Digital Transformation Masterclass
+            </h2>
+            <button class="max-w-40 font-medium text-[#143250] hover:text-[#f9f871] bg-[#f9f871] hover:bg-[#EF5C65] py-3 px-6 rounded-full">
+                Get Tickets
+            </button>
+        </div>
+    </div>
+    <div id="about" class="h-fit flex flex-col justify-center items-start px-5 py-10 sm:p-5 md:p-10 xl:p-20">
+      <h2 class="mb-5 md:mb-10 xl:mb-20 font-medium text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#143250]">
+        About:
+      </h2>
+      <div class="w-full flex 2xl:items-start 2xl:flex-row flex-col space-y-10 2xl:space-y-0">
+        <div class="grid grid-rows-2 md:grid-rows-1 2xl:grid-rows-2 grid-cols-2 md:grid-cols-4 2xl:grid-cols-2 2xl:grid-flow-col gap-2.5 md:gap-5">
+            <img class="" src="./assets/images/about-1.png" alt="">
+            <img class="" src="./assets/images/about-2.png" alt="">
+            <img class="" src="./assets/images/about-3.png" alt="">
+            <img class="" src="./assets/images/about-4.png" alt="">
+        </div>
+        <div class="w-full 2xl:w-8/12 2xl:ps-20">
+          <p class="mb-5 2xl:font-medium text-justify text-sm sm:text-lg md:text-xl lg:text-2xl lg:text-xl 2xl:leading-normal text-[#143250]">
+            Global Policy House, in collaboration with its partners, is organizing a Digital Transformation Masterclass
+            from 18th to 21st October in Sao Paolo, Brazil.
+          </p>
+          <p class="mb-5 2xl:font-medium text-justify text-sm sm:text-lg md:text-xl  lg:text-2xl lg:text-xl 2xl:leading-normal text-[#143250]">
+            This masterclass is designed to provide an in-depth exploration of Artificial Intelligence and
+            Blockchain Technology to support trade and economic growth. Participants will gain a
+            comprehensive understanding of how these cutting-edge technologies can revolutionize
+            businesses and industries. From machine learning to smart contracts, attendees will learn about the
+            latest trends and applications shaping the way we work and live.
+          </p>
+          <p class="mb-5 2xl:font-medium text-justify text-sm sm:text-lg md:text-xl  lg:text-2xl lg:text-xl 2xl:leading-normal text-[#143250]">
+            Expert instructors will lead hands-on exercises and present case studies, ensuring participants
+            leave the masterclass empowered and ready to implement their new knowledge in their careers.
+            This event is ideal for anyone looking to stay ahead of the curve in today’s digital world.
+          </p>
+          <p class="2xl:font-medium text-justify text-sm sm:text-lg md:text-xl lg:text-2xl lg:text-xl 2xl:leading-normal text-[#143250]">
+            The Digital Transformation Masterclass aims to attract a unique audience of international
+            development practitioners, government officials, thought leaders, investors, financiers, and
+            development partners. It provides an excellent opportunity for organizations to introduce their
+            programs and services, build lasting relationships, and collaborate well beyond the event.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="schedule" class="h-fit flex flex-col justify-center items-start px-5 py-10 sm:p-5 sm:p-10 xl:p-20 bg-[#143250]">
+        <h2 class="mb-5 md:mb-10 xl:mb-20 font-medium text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white">
+            Schedule:
+        </h2>
+        <div class="w-full flex flex-col sm:flex-row">
+            <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+                <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                    DAY 1
+                </p>
+            </div>
+            <div class="w-full sm:w-3/4">
+                <p class="font-medium text-left text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                  18th October, 2024
+                </p>
+                <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+                <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+                  FRIDAY
+                </p>
+                <div class="flex justify-start justify-items-center gap-2">
+                  <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                  <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                    Arrival & Pickup at the Airport
+                  </p>
+                </div>
+                <div class="mb-2.5 flex justify-start justify-items-center gap-2">
+                  <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                  <p class="font-normal text-left text-white text-sm md:text-md xl:mb-2">
+                    Check - In at Hotel
+                  </p>
+                </div>
+                <div class="flex justify-start justify-items-center gap-2">
+                  <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                  <p class="font-normal text-left text-sm md:text-md text-white">
+                    Welcome Dinner & Networking in the evening
+                  </p>
+                </div>  
+            </div>
+        </div>
+        <div class="w-full h-px my-5 sm:my-10 bg-[#3d5677]"></div>
+        <div class="w-full flex flex-col sm:flex-row">
+          <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+              <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                  DAY 2
+              </p>
+          </div>
+          <div class="w-full sm:w-3/4">
+              <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                19th October, 2024
+              </p>
+              <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+              <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+                SATURDAY
+              </p>
+              <div class="flex justify-start justify-items-center gap-2">
+                <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                <div>
+                  <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                    Class Session Begins in the Morning
+                  </p>
+                  <p class="mb-2.5 font-normal text-left text-sm text-[#EF5C65]">
+                    Artificial Intelligence
+                  </p>
+                </div>
+              </div>
+              <div class="mb-2.5 flex justify-start justify-items-center gap-2">
+                <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  City Tour (Come with us to discover all the most iconic corners of Sao Paulo)
+                </p>
+              </div>
+              <div class="mb-2.5 flex justify-start justify-items-center gap-2">
+                <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Exclusive Dinner
+                </p>
+              </div> 
+              <div class="flex justify-start justify-items-center gap-2">
+                <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Enjoy Samba Night
+                </p>
+              </div> 
+          </div>
+      </div>
+      <div class="w-full h-px my-5 sm:my-10 bg-[#3d5677]"></div>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+            <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                DAY 3
+            </p>
+        </div>
+        <div class="w-full sm:w-3/4">
+            <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+              20th October, 2024
+            </p>
+            <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+            <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+              SUNDAY
+            </p>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                Brunch
+              </p>
+            </div>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <div>
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Class Session Begins in the Afternoon
+                </p>
+                <p class="mb-2.5 font-normal text-left text-sm text-[#EF5C65]">
+                  Data - Special Focus on Digital Trade
+                </p>
+                <p class="mb-2.5 font-normal text-left text-sm text-[#EF5C65]">
+                  Digital Assets
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                Exclusive Dinner
+              </p>
+            </div> 
+        </div>
+      </div>
+      <div class="w-full h-px my-5 sm:my-10 bg-[#3d5677]"></div>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+            <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                DAY 4
+            </p>
+        </div>
+        <div class="w-full sm:w-3/4">
+            <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+              21st October, 2024
+            </p>
+            <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+            <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+              MONDAY
+            </p>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <div>
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Class Session Begins in the Morning
+                </p>
+                <p class="mb-2.5 font-normal text-left text-sm text-[#EF5C65]">
+                  Cyber Security
+                </p>
+                <p class="mb-2.5 font-normal text-left text-sm text-[#EF5C65]">
+                  Blockchain - Web 3
+                </p>
+              </div>
+            </div>
+            <div class="mb-2.5 flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                Lunch
+              </p>
+            </div>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                The SPA Experience (Enjoy an unforgettable experience that perfectly balances body and mind)
+              </p>
+            </div>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-2.png" alt="">
+              <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                Exclusive Dinner
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="w-full h-px my-5 sm:my-10 bg-[#3d5677]"></div>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+            <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                -
+            </p>
+        </div>
+        <div class=" w-full sm:w-3/4">
+            <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+              22nd - 23rd October, 2024
+            </p>
+            <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+            <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+              TUESDAY - WEDNESDAY
+            </p>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-3.png" alt="">
+              <div>
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Bilateral Meetings with Groups in Brazil
+                </p>
+                <p class="mb-2.5 font-normal text-left text-sm text-[#EF5C65]">
+                  This will be at an Extra Cost
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="w-full h-px my-5 sm:my-10 bg-[#3d5677]"></div>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+            <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                -
+            </p>
+        </div>
+        <div class="w-full sm:w-3/4">
+            <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+              24th October, 2024
+            </p>
+            <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+            <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+              THURSDAY
+            </p>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-3.png" alt="">
+              <div>
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Will be a Day Off for Participants
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="w-full h-px my-5 sm:my-10 bg-[#3d5677]"></div>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="w-full sm:w-1/4 flex justify-start items-start mb-2.5 sm:mb-0">
+            <p class="font-medium text-left text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                -
+            </p>
+        </div>
+        <div class="w-full sm:w-3/4">
+            <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+              25th - 27th October, 2024
+            </p>
+            <div class="my-5 xl:my-10 border-b-2 border-[#EF5C65]"></div>
+            <p class="mb-5 font-medium text-left text-lg md:text-xl lg:text-2xl text-white">
+              FRIDAY - SUNDAY
+            </p>
+            <div class="flex justify-start justify-items-center gap-2">
+              <img class="h-5 xl:h-6" src="./assets/images/checked-3.png" alt="">
+              <div>
+                <p class="mb-2.5 font-normal text-left text-sm md:text-md text-white">
+                  Will be for The Participation in Expo Africa Brasil Connection
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="speakers" class="h-fit flex flex-col justify-center items-start px-5 py-10 sm:p-5 md:p-10 xl:p-20 bg-white">
+      <h2 class="mb-5 md:mb-10 xl:mb-20 font-medium text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#143250]">
+        Speakers:
+      </h2>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="sm:w-2/5 lg:w-1/4 xl:w-2/5 2xl:w-1/4 flex bg-[#143250]">
+            <img class="" src="./assets/images/michelle-chivunga.jpg" alt="">
+        </div>
+        <div class="w-full sm:w-3/4 flex flex-col justify-center p-5 xl:p-10 2xl:p-20 bg-[#143250]">
+            <div class=""> 
+              <p class="font-medium text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white">
+                Michelle Chivunga
+              </p>
+              <p class="w-full sm:w-3/5 md:w-full mt-2.5 xl:mt-5 font-normal text-left text-xs md:text-sm xl:text-md 2xl:text-xl text-[#EF5C65]">
+                CEO, Founder, and Investor at Global Policy House
+              </p>
+            </div>
+            <div class="my-5 2xl:my-10 border-b-2 border-[#EF5C65]"></div> 
+            <div class="flex gap-5">
+              <div>
+                <p class="font-normal text-justify text-white text-sm  md:text-sm xl:text-lg 2xl:text-xl">
+                  Michelle is a globally recognized Blockchain and Digital transformation professional with career background in banking, government policy and technology spanning over 16 years. Currently in the emerging technology field evaluating the digital economy with a focus on Blockchain, AI, Cybersecurity and other data driven emerging technologies.
+                </p>
+              </div>
+              <img class="h-6 hidden" src="./assets/images/plus.png" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="sponsors" class="h-fit flex flex-col justify-center items-start px-5 py-10 p-5 md:p-10 xl:p-20 bg-[#143250]">
+      <h2 class="mb-5 md:mb-10 xl:mb-20 font-medium text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white">
+        Sponsors:
+      </h2>
+      <div class="w-full flex flex-col sm:flex-row sm:justify-between mb-10 xl:mb-20 2xl:mb-40 sm:space-x-5 xl:space-x-10 space-y-5 sm:space-y-0">
+        <div class="p-5 border-2 border-[#3d5677]">
+          <img class="md:1/4" src="./assets/images/sponsor-white.png" alt="">
+        </div>
+        <div class="p-5 border-2 border-[#3d5677]">
+          <img class="md:1/4" src="./assets/images/sponsor-white.png" alt="">
+        </div>
+        <div class="p-5 border-2 border-[#3d5677]">
+          <img class="md:1/4" src="./assets/images/sponsor-white.png" alt="">
+        </div>
+        <div class="p-5 border-2 border-[#3d5677]">
+          <img class="md:1/4" src="./assets/images/sponsor-white.png" alt="">
+        </div>
+      </div>
+      <div class="w-full flex flex-col md:flex-row justify-between sm:items-start md:items-center space-y-5">
+        <div class="w-full md:w-6/12 2xl:w-4/12 flex justify-start items-start">
+            <p class="md:pe-10 font-medium text-left text-3xl lg:text-5xl xl:text-6xl text-white">
+              Become a <span class="text-[#EF5C65]">Sponsor</span> Today
+            </p>
+        </div>
+        <div class="w-full md:w-8/12 2xl:w-8/12">
+          <p class="font-medium text-left text-lg sm:text-xl md:text-2xl xl:text-4xl 2xl:text-6xl text-white">
+            We cordially invite you to be part of an exciting event
+          </p>
+          <p class="my-5 xl:my-10 font-normal md:text-justify 2xl:text-left text-sm lg:text-md 2xl:text-xl text-white">
+            Sponsor the masterclass to showcase your programs to international development practitioners,
+            government officials, thought leaders, investors, financiers, and development partners.
+          </p>
+          <div class="p-5 rounded-lg bg-[#3d5677]">
+            <form class="flex flex-col 2xl:flex-row 2xl:space-x-5 space-y-5 2xl:space-y-0">
+                <input type="text" placeholder="First Name" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#143250] px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#f9f871]"/>
+                <input type="text" placeholder="Last Name" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#143250] px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#f9f871]"/>
+                <input type="email" placeholder="Enter your email" class="w-full 2xl:w-3/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#143250] px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#f9f871]"/>
+                <button type="submit" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#f9f871] hover:bg-[#EF5C65] px-6 py-3 rounded-full">
+                  Sign Up
+                </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="partners" class="h-fit flex flex-col justify-center items-start px-5 py-10 p-5 md:p-10 xl:p-20 bg-white">
+      <h2 class="mb-5 md:mb-10 xl:mb-20 font-medium text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#143250]">
+        Partners:
+      </h2>
+      <div class="w-full flex flex-col sm:flex-row">
+        <div class="w-full sm:w-2/5 md:w-4/12 lg:w-2/5 xl:w-2/5 2xl:w-1/4 flex justify-center items-center p-5 md:p-10 2xl:p-20 bg-[#3d5677]">
+          <div class="border-2 border-white">
+            <img class="" src="./assets/images/partner-white.png" alt="">
+          </div>
+        </div>
+        <div class="w-full sm:w-4/5 md:w-8/12 lg:w-3/5 xl:w-3/5 2xl:w-3/4 flex flex-col justify-center p-5 md:p-10 xl:p-20 bg-[#143250]">
+          <p class="xl:w-3/4 2xl:w-full font-medium text-left text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-white">
+            Become a <span class="text-[#EF5C65]">Partner</span> Today
+          </p>
+          <p class="my-5 xl:my-10 font-normal xl:text-justify 2xl:text-left text-sm xl:text-md 2xl:text-xl text-white">
+            Partner with us to sponsor the masterclass and showcase your programs to top international development practitioners,
+            officials, thought leaders, and investors.
+          </p>
+          <div class="p-5 rounded-lg shadow-md bg-[#3d5677]">
+            <form class="flex flex-col 2xl:flex-row 2xl:space-x-5 space-y-5 2xl:space-y-0">
+              <input type="text" placeholder="First Name" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#143250] px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#f9f871]"/>
+              <input type="text" placeholder="Last Name" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#143250] px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#f9f871]"/>
+              <input type="email" placeholder="Enter your email" class="w-full 2xl:w-3/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#143250] px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#f9f871]"/>
+              <button type="submit" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#f9f871] hover:bg-[#EF5C65] px-6 py-3 rounded-full">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-fit flex flex-col sm:flex-row px-5 py-10 sm:p-5 md:p-10 xl:p-20 bg-[#143250]">
+      <div class="sm:w-4/12 md:w-5/12 flex flex-col justify-between xl:space-y-20">
+        <div class="sm:pe-10 xl:pe-20">
+          <p class="mb-5 font-normal text-sm lg:text-lg text-[#EF5C65]">Sign Up for Updates</p>
+          <p class="font-medium text-base md:text-xl lg:text-2xl 2xl:text-4xl text-white">
+            Be one of the first to know about Digital Transformation Masterclass speakers and agenda updates,
+            upcoming pass releases and exclusive offers!
+          </p>
+        </div>
+        <div>
+          <div class="my-5 sm:mb-5 2xl:mb-10 flex sm:flex-col font-normal text-left text-sm lg:text-xl gap-x-2.5 lg:gap-x-5 text-white">
+            <a class="hover:text-[#EF5C65]" href="https://www.linkedin.com/company/global-policy-house" target="_blank">LinkedIn</a>
+            <!-- <a class="hover:text-[#EF5C65]" href="">X</a> -->
+            <a class="hover:text-[#EF5C65]" href="https://www.instagram.com/globalpolicyhouse" target="_blank">Instagram</a>
+            <a class="hover:text-[#EF5C65]" href="https://www.youtube.com/@globalpolicyhouse7683" target="_blank">YouTube</a>
+          </div>
+          <img class="w-2/4 md:w-1/4" src="./assets/images/gph-logo-white.png" alt="">
+        </div>
+      </div>
+      <div class="sm:w-8/12 md:w-7/12 p-5 p-10 mt-5 rounded-lg shadow-md bg-[#3d5677]">
+        <form class="flex flex-wrap gap-5">
+          <div class="w-full flex flex-col sm:flex-row sm:space-x-5 xl:space-x-10">
+            <input type="text" placeholder="First Name" class="w-full py-3 px-6 font-medium text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+            <input type="text" placeholder="Last Name" class="w-full py-3 px-6 font-medium text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+          </div>
+          <div class="w-full">
+            <input type="email" placeholder="Email Address" class="w-full py-3 px-6 font-medium text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+          </div>
+          <div class="w-full flex flex-col sm:flex-row sm:space-x-5 xl:space-x-10">
+            <input type="text" placeholder="Title" class="w-full font-medium py-3 px-6 text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+            <input type="text" placeholder="Company" class="w-full font-medium py-3 px-6 text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+          </div>
+          <div class="w-full flex flex-col sm:flex-row sm:space-x-5 xl:space-x-10">
+            <input type="text" placeholder="Country" class="w-full font-medium py-3 px-6 text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+            <input type="tel" placeholder="Phone Number" class="w-full font-medium py-3 px-6 text-[#143250] hover:text-[#f9f871] bg-[#3d5677] border-b-4 border-[#143250] focus:outline-none focus:ring-2 focus:ring-[#143250]"/>
+          </div>
+          <div class="w-full 2xl:w-auto flex items-start space-x-2.5">
+            <input type="checkbox" id="agree" class="w-5 h-5 text-[#143250] hover:text-[#f9f871] bg-[#143250] rounded">
+            <label for="agree" class="font-medium text-justify text-xs text-[#143250]">By submitting this information, I agree to the Bloomberg privacy policy, terms and conditions and to learn more about products and services from Bloomberg.</label>
+          </div>
+          <button type="submit" class="w-full 2xl:w-1/4 font-medium text-[#143250] hover:text-[#f9f871] bg-[#f9f871] hover:bg-[#EF5C65] py-3 px-6 rounded-full">
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+  </main> 
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
